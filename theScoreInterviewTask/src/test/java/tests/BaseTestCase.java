@@ -19,7 +19,7 @@ public class BaseTestCase {
         capabilities.setCapability("appium:platformVersion", "14.0");
         capabilities.setCapability("appium:deviceName","Pixel 8 API 34");
         capabilities.setCapability("appium:automationName", "UiAutomator2");
-        capabilities.setCapability("appium:app", "/Users/mrv/Downloads/theScore Sports News & Scores_24.6.0_Apkpure.apk");
+        capabilities.setCapability("appium:app", System.getProperty("user.home") + "/Documents/GitHub/theScoreInterview/theScoreInterviewTask/src/test/java/resources/theScore Sports News & Scores_24.6.0_Apkpure.apk");
 
         driver = new AppiumDriver(new URL("http://127.0.0.1:4723"), capabilities);
     }
